@@ -11,7 +11,7 @@ const Menubar = () => {
   };
 
   return (
-    <div className="flex md:hidden">
+    <div className="z-50 flex md:hidden">
       <ul className="flex">
         {navlinks.slice(0, 3).map((link) => {
           return (

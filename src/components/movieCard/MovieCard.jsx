@@ -91,9 +91,11 @@ const MovieCard = ({ movie }) => {
             return (
               <div key={item.id} className="px-[10px] focus:outline-none">
                 <img
-                  src={
-                    `${imageBaseUrl + item.backdrop_path}` || defaultMovieBanner
-                  }
+                  src={`${
+                    item?.backdrop_path
+                      ? imageBaseUrl + item?.backdrop_path
+                      : defaultMovieBanner
+                  }`}
                   alt={item.title}
                   className="w-full sm:w-[250px] cursor-pointer block h-[150px] object-cover object-center rounded-md transition-all duration-300 hover:scale-110"
                   onClick={async () => {
