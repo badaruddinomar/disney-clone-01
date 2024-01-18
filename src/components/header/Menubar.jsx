@@ -29,7 +29,7 @@ const Menubar = () => {
           <MoreVertIcon onClick={toggleLinkHandler} />
 
           <ul
-            className={`absolute bg-[#121212] px-[30px] mt-4  rounded-sm  transition-all duration-75 ${
+            className={`absolute left-[-100px] bg-[#121212] px-[30px] mt-4  rounded-md  transition-all duration-75 ${
               toggleLink ? "visible opacity-[1]" : "invisible opacity-0"
             }`}
           >

@@ -72,6 +72,3 @@ const SearchMovieCard = ({ movie }) => {
 };
 
 export default SearchMovieCard;
-const str = "badar uddin omar allah is the greatest";
-const newStr = str.slice(0, 15);
-console.log(newStr);
