@@ -71,7 +71,6 @@ const MovieCard = ({ movie }) => {
       const response = await fetch(url);
       const data = await response.json();
       setVideoUrlKey(data?.videos?.results[0]?.key);
-      // console.log(data);
     } catch (err) {
       console.log(err);
     }

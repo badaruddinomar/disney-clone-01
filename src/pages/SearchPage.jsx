@@ -33,7 +33,6 @@ const SearchPage = () => {
       const url = `${apiBaseUrl}/search/movie?query=${searchKeyword}&api_key=${apiKey}&page=${currentPage}`;
       const response = await fetch(url);
       const data = await response.json();
-      console.log(data);
       setMovies(data.results);
       setTotalMovie(data.total_results);
       backdropCloseHandler();
@@ -41,7 +40,6 @@ const SearchPage = () => {
       console.log(err);
     }
   };
-  console.log(currentPage);
   // handler pagination --
   const setCurrentPageNo = (page) => {
     setCurrentPage(page);
