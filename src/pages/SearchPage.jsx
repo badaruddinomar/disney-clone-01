@@ -65,7 +65,7 @@ const SearchPage = () => {
               />
               <button
                 onClick={searchHandler}
-                className="text-white h-[52px] bg-slate-500 px-5 rounded-e-sm text-[16px] hover:opacity-70"
+                className="text-white h-[52px] bg-slate-500 px-2 md:px-5 rounded-e-sm text-[16px] hover:opacity-70"
               >
                 Search
               </button>
